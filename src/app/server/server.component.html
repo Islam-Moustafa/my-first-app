@@ -1,0 +1,7 @@
+
+<!--ngStyle to use style directive to change background dynamically-->
+<p 
+   [ngStyle]="{backgroundColor: getColor()}"
+   [ngClass]="{online: serverStatus === 'online'}">
+    {{ 'Server' }} With ID {{ serverId }} is {{ getServerStatus() }} 
+</p>
